@@ -12,9 +12,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text|
-|image|string|
-|group|reference|null: false, foreign_key: true|
-|user|reference|null: false, foreign_key: true|
+|image|text|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
 - belongs_to :user
@@ -33,8 +33,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, foreign_key: true|
-|group|reference|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
