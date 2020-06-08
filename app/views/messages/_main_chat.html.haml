@@ -1,0 +1,25 @@
+.Chat-main
+  .Chat-main__group-info
+    .Chat-main__group-names
+      .Chat-main__group-name あ
+      .Chat-main__group-list
+        Member : 
+        .Chat-main__group-member 
+          いいいい
+    .Chat-main__group-edit Edit
+  .Chat-main__message-list
+    .Chat-main__message-box
+      .Chat-main__message-info
+        .Chat-main__user-name koki
+        .Chat-main__time 2020/6/5
+      .Chat-main__message 
+        .Chat-main__message-content あああ
+  .Chat-main__message-form
+    .form
+      %form.new-message
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class:"input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class:"input-box__image__file"}
+        %input{type: "submit" , class: "submit-btn"}
